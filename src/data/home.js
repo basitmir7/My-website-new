@@ -11,6 +11,7 @@ import testdome from "../assets/certificates/TestDome.png";
 import udemy from "../assets/certificates/Udemy.png";
 import hk from "../assets/certificates/hk.png";
 import ss from "../assets/certificates/ss.png";
+import univlogo from "../assets/myU.png";
 
 export const homeData = {
   title:
@@ -117,3 +118,11 @@ export const certificates = [
     date: "Feb 2022",
   },
 ];
+
+export const education = {
+  name: "Islamic University of Science and technology",
+  course: "B.Tech, Computer Science and Engineering",
+  date: "2017 - 2021",
+  logo: univlogo,
+  cgpa: "7.24",
+};

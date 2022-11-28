@@ -1,4 +1,5 @@
 import { certificates } from "../../data/home";
+import { education } from "../../data/home";
 import Certificate from "./certificate";
 const Information = () => {
   return (
@@ -26,9 +27,23 @@ const Information = () => {
         <div>
           <div className="location">
             <h5>Location</h5>
+            <p>Jammu and Kashmir, India</p>
           </div>
           <div className="education">
             <h5>Education</h5>
+            <h4>
+              <img
+                src={education.logo}
+                style={{ height: "45px", width: "45px", marginRight: "10px" }}
+              />
+              {education.name}
+            </h4>
+            <div style={{ marginLeft: "3.3rem" }}>
+              <a>{education.course}</a>
+              <p>
+                {education.date} | CGPA: {education.cgpa}
+              </p>
+            </div>
           </div>
         </div>
       </section>

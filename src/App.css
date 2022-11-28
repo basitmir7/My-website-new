@@ -1,6 +1,7 @@
 :root {
   --font-nunito: "Nunito Sans";
-  --font-size-sm: 14px;
+  --font-size-sm: 16px;
+  --font-size-xm: 14px;
   ---font-size-md: 20px;
   --font-size-lg: 36px;
   --font-size-xl: 42px;
@@ -49,9 +50,20 @@ h1 {
   color: var(--text-white);
 }
 p {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xm);
   line-height: 23px;
   color: var(--cyan-bluish-gray);
+}
+a {
+  text-decoration: none;
+  font-size: var(--font-size-xm);
+  color: var(--dark-blue);
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--text-white);
 }
 /* navbar css */
 
@@ -121,6 +133,7 @@ p {
   transition: all ease-in-out 0.2s;
   -webkit-transition: 0.25s ease, opacity 0.2s ease;
   cursor: pointer;
+  color: var(--cyan-bluish-gray);
 }
 
 .social a:hover {
@@ -200,7 +213,7 @@ p {
   align-items: center;
   line-height: 22px;
   padding: 4px;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xm);
 }
 .tools ul li img {
   height: 37px;
@@ -209,20 +222,13 @@ p {
 }
 
 /* certificate css */
-.certificate {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 4rem;
-}
-.certificate h4 {
+
+.certificate h4,
+.education h4 {
   display: flex;
   align-items: center;
 }
-.certificate h4 img {
-  height: 45px;
-  width: 45px;
-  margin-right: 10px;
-}
+
 .certificate > * {
   margin: 0;
   padding: 0;
