@@ -65,6 +65,7 @@ p {
   width: 100%;
   transition: all ease-in-out 0.3s;
   height: 5.5rem;
+  z-index: 2;
 }
 .navbar-active {
   background-color: var(--black) !important;
@@ -205,4 +206,24 @@ p {
   height: 37px;
   width: 37px;
   margin-right: 7px;
+}
+
+/* certificate css */
+.certificate {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+.certificate h4 {
+  display: flex;
+  align-items: center;
+}
+.certificate h4 img {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+}
+.certificate > * {
+  margin: 0;
+  padding: 0;
 }

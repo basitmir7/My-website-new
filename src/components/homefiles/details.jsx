@@ -1,7 +1,7 @@
 import { skills, interpersonalSkills, tools } from "../../data/home";
 const Details = () => {
   return (
-    <div className="details">
+    <section className="details">
       <h2>Expertise</h2>
       <div className="skills">
         <h5>Skills</h5>
@@ -32,7 +32,7 @@ const Details = () => {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
